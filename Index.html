@@ -1,0 +1,1200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ambrosia - Taste the Divine</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts - Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+    @font-face {
+      font-family: 'MyCustomFont';
+      src: url('font/NCLGasdrifo-Demo.otf') format('opentype');
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    .custom-font-line {
+      font-family: 'MyCustomFont', sans-serif;
+      font-size: 120px;
+      color: #333;	
+    }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #FDFBF6; /* Cream base theme */
+            color: #333; /* Dark text for contrast */
+            line-height: 1.6;
+        }
+        .menu-page {
+            min-height: 100vh; /* Simulate full page height */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 2rem;
+            box-sizing: border-box;
+            text-align: center;
+        }
+        .menu-section {
+            width: 100%;
+            max-width: 960px; /* Max width for content */
+            margin: 2rem auto;
+            padding: 2rem;
+            background-color: #FFF; /* White background for menu sections */
+            border-radius: 1rem;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+        }
+        .dish-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px dashed #E5E7EB; /* Light border */
+        }
+        .dish-name {
+            font-weight: 600;
+            color: #4A5568; /* Slightly darker grey for names */
+        }
+        .dish-description {
+            font-size: 0.9rem;
+            color: #718096; /* Lighter grey for descriptions */
+            margin-top: 0.2rem;
+        }
+        .dish-price {
+            font-weight: 500;
+            color: #2D3748; /* Darker grey for prices */
+            white-space: nowrap; /* Prevent price from wrapping */
+            margin-left: 1rem; /* Space between description and price */
+        }
+        .signature-dish .dish-name {
+            color: #B7410E; /* A warm, inviting color for signature dishes */
+            font-weight: 700;
+        }
+        .signature-dish .dish-description {
+            color: #B7410E;
+            font-style: italic;
+        }
+        @media (max-width: 768px) {
+            .menu-section {
+                padding: 1.5rem;
+            }
+            .dish-item {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .dish-price {
+                margin-top: 0.5rem;
+                margin-left: 0;
+                align-self: flex-end;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Menu Cover Page -->
+    <section class="menu-page bg-amber-50">
+        <div class="p-8 rounded-lg shadow-xl bg-white max-w-lg w-full">
+		
+            <h1 class="custom-font-line text-amber-900">ambrosia</h1>
+            <h3 class="text-3xl md:text-4xl text-amber-700 italic">Taste the Divine</h3>
+        </div>
+    </section>
+
+    <!-- Welcome Message Page -->
+    <section class="menu-page bg-amber-50">
+        <div class="p-8 rounded-lg shadow-xl bg-white max-w-2xl w-full">
+            <p class="text-xl md:text-2xl text-gray-700 leading-relaxed tracking-wide">
+                Step through our doors, a culinary dream, <br>
+                Where vibrant flavors brightly gleam. <br>
+                From every land, a dish untold, <br>
+                Each bite a story, brave and bold. <br>
+                A divine feast, for you we weave, <br>
+                A taste of heaven, you'll believe.
+            </p>
+        </div>
+    </section>
+
+    <!-- Main Menu Content -->
+    <main class="container mx-auto py-8 px-4">
+
+        <!-- Soothing Soups Section -->
+        <section class="menu-section">
+
+            <h3 class="text-3xl font-semibold text-amber-800 mb-6" Style="text-align : center;">Soothing Soups</h3>
+            <p class="text-md text-amber-700 mb-6 italic" Style="text-align : center;">Warm your soul with our comforting concoctions</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-4">
+                <div class="dish-item">
+                    <div>
+                        <div class="dish-name">Divine Tomato & Coriander Shorba</div>
+                        <div class="dish-description">A classic Indian broth, light and refreshing.</div>
+                    </div>
+                    <div class="dish-price">INR 199</div>
+                </div>
+                <div class="dish-item">
+                    <div>
+                        <div class="dish-name">Asian Spiced Manchow Soup</div>
+                        <div class="dish-description">A fiery blend of vegetables and authentic Asian flavors.</div>
+                    </div>
+                    <div class="dish-price">INR 219</div>
+                </div>
+                <div class="dish-item">
+                    <div>
+                        <div class="dish-name">Zesty Hot & Sour Soup</div>
+                        <div class="dish-description">A tangy and spicy favorite to awaken your palate.</div>
+                    </div>
+                    <div class="dish-price">INR 219</div>
+                </div>
+                <div class="dish-item">
+                    <div>
+                        <div class="dish-name">Sweet Corn Kernel Soup</div>
+                        <div class="dish-description">A wholesome and creamy soup, perfect for all ages.</div>
+                    </div>
+                    <div class="dish-price">INR 219</div>
+                </div>
+                <div class="dish-item">
+                    <div>
+                        <div class="dish-name">Lemon Coriander Bliss Soup</div>
+                        <div class="dish-description">A clear, aromatic soup with a citrusy kick.</div>
+                    </div>
+                    <div class="dish-price">INR 219</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Garden Fresh Delights Section -->
+        <section class="menu-section">
+            <h3 class="text-3xl font-semibold text-amber-800 mb-6" Style="text-align : center;">Garden Fresh Delights</h3>
+            <p class="text-md text-amber-700 mb-6 italic" Style="text-align : center;">Crisp and vibrant, for a healthy start.</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-4">
+                <div class="dish-item">
+                    <div>
+                        <div class="dish-name">Emerald Garden Fresh Salad</div>
+                        <div class="dish-description">A medley of seasonal greens with a light dressing.</div>
+                    </div>
+                    <div class="dish-price">INR 199</div>
+                </div>
+                <div class="dish-item">
+                    <div>
+                        <div class="dish-name">Classic Russian Medley Salad</div>
+                        <div class="dish-description">Diced vegetables and fruits in a creamy, tangy dressing.</div>
+                    </div>
+                    <div class="dish-price">INR 239</div>
+                </div>
+                <div class="dish-item">
+                    <div>
+                        <div class="dish-name">Signature Caesar's Salad</div>
+                        <div class="dish-description">Crisp lettuce, croutons, and Parmesan, tossed in our classic Caesar dressing.</div>
+                    </div>
+                    <div class="dish-price">INR 239</div>
+                </div>
+                <div class="dish-item">
+                    <div>
+                        <div class="dish-name">Spicy Mexican Fiesta Salad</div>
+                        <div class="dish-description">A vibrant blend of beans, corn, and crisp veggies with a zesty dressing.</div>
+                    </div>
+                    <div class="dish-price">INR 239</div>
+                </div>
+                <div class="dish-item">
+                    <div>
+                        <div class="dish-name">Zingy Kimchi Salad</div>
+                        <div class="dish-description">A fermented cabbage salad, bursting with umami flavor.</div>
+                    </div>
+                    <div class="dish-price">INR 239</div>
+                </div>
+                <div class="dish-item">
+                    <div>
+                        <div class="dish-name">Tangy Onion Salad</div>
+                        <div class="dish-description">Simple yet satisfying, with a hint of lemon and spice.</div>
+                    </div>
+                    <div class="dish-price">INR 99</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Ambrosial Beverages Section -->
+        <section class="menu-section">
+
+            <h3 class="text-3xl font-semibold text-amber-800 mb-6" Style="text-align : center;">The Elixirs of Ambrosia</h3>
+            <p class="text-md text-amber-700 mb-6 italic" Style="text-align : center;">Sip on pure delight, crafted to perfection.</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-4">
+                <div class="dish-item">
+                    <div>
+                        <div class="dish-name">Packaged Drinking Water</div>
+                        <div class="dish-description">Stay hydrated with pure, refreshing water.</div>
+                    </div>
+                    <div class="dish-price">INR 49</div>
+                </div>
+                <div class="dish-item">
+                    <div>
+                        <div class="dish-name">Assorted Aerated Drinks</div>
+                        <div class="dish-description">Choose from our range of popular sodas.</div>
+                    </div>
+                    <div class="dish-price">INR 69</div>
+                </div>
+                <div class="dish-item">
+                    <div>
+                        <div class="dish-name">Sparkling Fresh Lime </div>
+                        <div class="dish-description">Freshly squeezed lime with a choice of sparkling or still water, a true thirst-buster.</div>
+                    </div>
+                    <div class="dish-price">INR 109</div>
+                </div>
+                <div class="dish-item">
+                    <div>
+                        <div class="dish-name">Red Bull</div>
+                        <div class="dish-description">Boost your spirits with this energizing favorite.</div>
+                    </div>
+                    <div class="dish-price">INR 209</div>
+                </div>
+                <div class="dish-item">
+                    <div>
+                        <div class="dish-name">Diet Coke</div>
+                        <div class="dish-description">A guilt-free indulgence for a lighter sip.</div>
+                    </div>
+                    <div class="dish-price">INR 109</div>
+                </div>
+                <div class="dish-item">
+                    <div>
+                        <div class="dish-name">Spiced Cold Drink Masala</div>
+                        <div class="dish-description">A unique blend of spices and a fizzy drink.</div>
+                    </div>
+                    <div class="dish-price">INR 109</div>
+                </div>
+                <div class="dish-item">
+                    <div>
+                        <div class="dish-name">Chilled Coffee Delight</div>
+                        <div class="dish-description">A creamy and invigorating cold coffee.</div>
+                    </div>
+                    <div class="dish-price">INR 129</div>
+                </div>
+                <div class="dish-item">
+                    <div>
+                        <div class="dish-name">Chocolate Indulgence</div>
+                        <div class="dish-description">A decadent blend of chocolate and creamy goodness.</div>
+                    </div>
+                    <div class="dish-price">INR 149</div>
+                </div>
+                <div class="dish-item">
+                    <div>
+                        <div class="dish-name">Oreo Crunch</div>
+                        <div class="dish-description">Your favorite cookie transformed into a delightful shake.</div>
+                    </div>
+                    <div class="dish-price">INR 169</div>
+                </div>
+                <div class="dish-item">
+                    <div>
+                        <div class="dish-name">Brownie Bliss</div>
+                        <div class="dish-description">A rich, chocolatey shake with brownie chunks.</div>
+                    </div>
+                    <div class="dish-price">INR 189</div>
+                </div>
+                <div class="dish-item">
+                    <div>
+                        <div class="dish-name">Berry Blast</div>
+                        <div class="dish-description">A refreshing Smoothie made of assorted berries.</div>
+                    </div>
+                    <div class="dish-price">INR 189</div>
+                </div>
+                <div class="dish-item">
+                    <div>
+                        <div class="dish-name">Virgin Mary</div>
+                        <div class="dish-description">A savory and spicy mocktail, sans the spirits.</div>
+                    </div>
+                    <div class="dish-price">INR 199</div>
+                </div>
+                <div class="dish-item">
+                    <div>
+                        <div class="dish-name">Virgin Mojito</div>
+                        <div class="dish-description">Fresh mint, lime, and soda for a truly refreshing experience.</div>
+                    </div>
+                    <div class="dish-price">INR 199</div>
+                </div>
+                <div class="dish-item">
+                    <div>
+                        <div class="dish-name">Elderflower Spritzer</div>
+                        <div class="dish-description">A fragrant and light floral-infused spritzer.</div>
+                    </div>
+                    <div class="dish-price">INR 209</div>
+                </div>
+                <div class="dish-item">
+                    <div>
+                        <div class="dish-name">Traditional Aam Ka Panna</div>
+                        <div class="dish-description">A sweet and tangy raw mango cooler.</div>
+                    </div>
+                    <div class="dish-price">INR 109</div>
+                </div>
+                <div class="dish-item">
+                    <div>
+                        <div class="dish-name">Spiced Buttermilk</div>
+                        <div class="dish-description">Traditional Chach, perfect for digestion.</div>
+                    </div>
+                    <div class="dish-price">INR 109</div>
+                </div>
+                <div class="dish-item">
+                    <div>
+                        <div class="dish-name">Zesty Masala Lemonade</div>
+                        <div class="dish-description">A refreshing twist on classic lemonade with Indian spices.</div>
+                    </div>
+                    <div class="dish-price">INR 109</div>
+                </div>
+                <div class="dish-item">
+                    <div>
+                        <div class="dish-name">Aromatic Masala Tea</div>
+                        <div class="dish-description">A comforting brew with traditional Indian spices.</div>
+                    </div>
+                    <div class="dish-price">INR 79</div>
+                </div>
+                <div class="dish-item">
+                    <div>
+                        <div class="dish-name">Freshly Brewed Coffee</div>
+                        <div class="dish-description">A perfect pick-me-up for any time of day.</div>
+                    </div>
+                    <div class="dish-price">INR 99</div>
+                </div>
+                <div class="dish-item">
+                    <div>
+                        <div class="dish-name">Velvet Hot Chocolate</div>
+                        <div class="dish-description">A rich and creamy classic, perfect for a cozy moment.</div>
+                    </div>
+                    <div class="dish-price">INR 119</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tandoor's Embrace Section -->
+        <section class="menu-section">
+            <h3 class="text-3xl font-semibold text-amber-800 mb-6" Style="text-align : center;">Tandoor's Embrace</h3>
+            <p class="text-md text-amber-700 mb-6 italic" Style="text-align : center;">Savor the smoky magic from our clay oven.</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-4">
+                <div class="dish-item">
+                    <div>
+                        <div class="dish-name">Garlic Kissed Paneer Tikka</div>
+                        <div class="dish-description">Cottage cheese marinated in garlic and grilled to perfection.</div>
+                    </div>
+                    <div class="dish-price">INR 299</div>
+                </div>
+                <div class="dish-item">
+                    <div>
+                        <div class="dish-name">Carom Seed Paneer Tikka</div>
+                        <div class="dish-description">Flavorful paneer infused with aromatic ajwain seeds.</div>
+                    </div>
+                    <div class="dish-price">INR 299</div>
+                </div>
+                <div class="dish-item">
+                    <div>
+                        <div class="dish-name">Achari Paneer Tikka</div>
+                        <div class="dish-description">Tangy and spicy paneer, a true North Indian delight.</div>
+                    </div>
+                    <div class="dish-price">INR 299</div>
+                </div>
+                <div class="dish-item">
+                    <div>
+                        <div class="dish-name">Paneer Malai Tikka</div>
+                        <div class="dish-description">Succulent paneer marinated in a rich, creamy blend.</div>
+                    </div>
+                    <div class="dish-price">INR 319</div>
+                </div>
+                <div class="dish-item">
+                    <div>
+                        <div class="dish-name">Smoky Soya Chaap</div>
+                        <div class="dish-description">Flavorful soya chunks, marinated and roasted in the tandoor.</div>
+                    </div>
+                    <div class="dish-price">INR 279</div>
+                </div>
+                <div class="dish-item">
+                    <div>
+                        <div class="dish-name">Tandoori Spiced Aloo</div>
+                        <div class="dish-description">Roasted potatoes with a smoky, spicy coating.</div>
+                    </div>
+                    <div class="dish-price">INR 269</div>
+                </div>
+                <div class="dish-item">
+                    <div>
+                        <div class="dish-name">Chargrilled Tandoori Mushroom</div>
+                        <div class="dish-description">Earthy mushrooms marinated and grilled to tender perfection.</div>
+                    </div>
+                    <div class="dish-price">INR 279</div>
+                </div>
+                <div class="dish-item">
+                    <div>
+                        <div class="dish-name">Dahi Ke Sholey</div>
+                        <div class="dish-description">Yogurt and paneer fritters, a crunchy and flavorful starter.</div>
+                    </div>
+                    <div class="dish-price">INR 289</div>
+                </div>
+                <div class="dish-item">
+                    <div>
+                        <div class="dish-name">Hara Bhara Kebab</div>
+                        <div class="dish-description">Healthy and delicious kebabs made with spinach and green peas.</div>
+                    </div>
+                    <div class="dish-price">INR 269</div>
+                </div>
+                <div class="dish-item">
+                    <div>
+                        <div class="dish-name">Malai Broccoli</div>
+                        <div class="dish-description">Broccoli florets marinated in a rich cream sauce and charred in the tandoor.</div>
+                    </div>
+                    <div class="dish-price">INR 299</div>
+                </div>
+                <div class="dish-item">
+                    <div>
+                        <div class="dish-name">Roti Pe Boti </div>
+                        <div class="dish-description">Exotic mushroom and vegetable medley, slow-cooked and served on mini rotis – our chef's special.</div>
+                    </div>
+                    <div class="dish-price">INR 299</div>
+                </div>
+                <div class="dish-item">
+                    <div>
+                        <div class="dish-name">Mushroom Galauti Kebab</div>
+                        <div class="dish-description">Melt-in-your-mouth mushroom kebabs, a vegetarian delight.</div>
+                    </div>
+                    <div class="dish-price">INR 299</div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Ambrosia's Signatures & Mains Section -->
+        <section class="menu-section">
+            <h4 class="text-2xl font-semibold text-amber-800 mt-8 mb-4" Style="text-align : center;">Dal Delicacies</h4>
+            <p class="text-md text-amber-700 mb-6 italic" Style="text-align : center;">Slow-cooked to perfection, rich in flavor.</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-4">
+                <div class="dish-item">
+                    <div>
+                        <div class="dish-name">Classic Dal Tadka</div>
+                        <div class="dish-description">Yellow lentils tempered with aromatic spices.</div>
+                    </div>
+                    <div class="dish-price">INR 299</div>
+                </div>
+                <div class="dish-item">
+                    <div>
+                        <div class="dish-name">Creamy Dal Makhani</div>
+                        <div class="dish-description">Black lentils slow-cooked to a rich and buttery perfection.</div>
+                    </div>
+                    <div class="dish-price">INR 329</div>
+                </div>
+                <div class="dish-item">
+                    <div>
+                        <div class="dish-name">Dal Dum Pukht </div>
+                        <div class="dish-description">Our special slow-cooked lentil creation – a house special.</div>
+                    </div>
+                    <div class="dish-price">INR 369</div>
+                </div>
+            </div>
+
+            <h4 class="text-2xl font-semibold text-amber-800 mt-8 mb-4" Style="text-align : center;">Paneer Paradise</h4>
+            <p class="text-md text-amber-700 mb-6 italic" Style="text-align : center;">Indulge in our exquisite cottage cheese creations.</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-4">
+                <div class="dish-item">
+                    <div>
+                        <div class="dish-name">Paneer Butter Masala</div>
+                        <div class="dish-description">Soft paneer cubes in a rich, creamy tomato gravy.</div>
+                    </div>
+                    <div class="dish-price">INR 369</div>
+                </div>
+                <div class="dish-item">
+                    <div>
+                        <div class="dish-name">Wok Tossed Kadhai Paneer</div>
+                        <div class="dish-description">Paneer cooked with bell peppers and onions in a traditional Indian wok.</div>
+                    </div>
+                    <div class="dish-price">INR 369</div>
+                </div>
+                <div class="dish-item">
+                    <div>
+                        <div class="dish-name">Handi Paneer</div>
+                        <div class="dish-description">Paneer cooked in a traditional clay pot, retaining rich flavors.</div>
+                    </div>
+                    <div class="dish-price">INR 379</div>
+                </div>
+                <div class="dish-item">
+                    <div>
+                        <div class="dish-name">Paneer Do Pyaza</div>
+                        <div class="dish-description">Paneer cooked with a generous amount of onions for a sweet-savory taste.</div>
+                    </div>
+                    <div class="dish-price">INR 359</div>
+                </div>
+                <div class="dish-item">
+                    <div>
+                        <div class="dish-name">Paneer Lababdar</div>
+                        <div class="dish-description">Paneer in a luscious, mildly spiced gravy, a true delight.</div>
+                    </div>
+                    <div class="dish-price">INR 379</div>
+                </div>
+                <div class="dish-item">
+                    <div>
+                        <div class="dish-name">Shahi Paneer</div>
+                        <div class="dish-description">Royal paneer curry in a rich, creamy, and mildly sweet gravy.</div>
+                    </div>
+                    <div class="dish-price">INR 389</div>
+                </div>
+            </div>
+
+            <h4 class="text-2xl font-semibold text-amber-800 mt-8 mb-4" Style="text-align : center;">Vegetarian Wonders</h4>
+            <p class="text-md text-amber-700 mb-6 italic" Style="text-align : center;">A delightful array of vegetable preparations.</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-4">
+                <div class="dish-item">
+                    <div>
+                        <div class="dish-name">Kashmiri Dum Aloo</div>
+                        <div class="dish-description">Baby potatoes in a rich, flavorful Kashmiri-style gravy.</div>
+                    </div>
+                    <div class="dish-price">INR 329</div>
+                </div>
+                <div class="dish-item">
+                    <div>
+                        <div class="dish-name">Bhojpuri Dum Aloo</div>
+                        <div class="dish-description">A rustic and spicy potato curry from the heartland.</div>
+                    </div>
+                    <div class="dish-price">INR 309</div>
+                </div>
+                <div class="dish-item">
+                    <div>
+                        <div class="dish-name">Malai Kofta</div>
+                        <div class="dish-description">Soft paneer and vegetable dumplings in a rich, white gravy.</div>
+                    </div>
+                    <div class="dish-price">INR 349</div>
+                </div>
+                <div class="dish-item">
+                    <div>
+                        <div class="dish-name">Hara Bhara Kofta</div>
+                        <div class="dish-description">Healthy koftas made with green vegetables, in a flavorful gravy.</div>
+                    </div>
+                    <div class="dish-price">INR 329</div>
+                </div>
+                <div class="dish-item">
+                    <div>
+                        <div class="dish-name">Veg Jalfrezi</div>
+                        <div class="dish-description">A vibrant mix of vegetables stir-fried in a tangy tomato sauce.</div>
+                    </div>
+                    <div class="dish-price">INR 309</div>
+                </div>
+                <div class="dish-item">
+                    <div>
+                        <div class="dish-name">Jeera Aloo</div>
+                        <div class="dish-description">Simple yet flavorful potatoes tossed with cumin seeds.</div>
+                    </div>
+                    <div class="dish-price">INR 299</div>
+                </div>
+                <div class="dish-item">
+                    <div>
+                        <div class="dish-name">Kurkuri Bhindi</div>
+                        <div class="dish-description">Thinly sliced okra, fried to a delightful crisp.</div>
+                    </div>
+                    <div class="dish-price">INR 299</div>
+                </div>
+                <div class="dish-item">
+                    <div>
+                        <div class="dish-name">Seasonal Mix Veg Dry</div>
+                        <div class="dish-description">A hearty medley of garden-fresh vegetables, stir-fried.</div>
+                    </div>
+                    <div class="dish-price">INR 299</div>
+                </div>
+                <div class="dish-item">
+                    <div>
+                        <div class="dish-name">Chana Masala</div>
+                        <div class="dish-description">Chickpeas cooked in a flavorful and aromatic onion-tomato gravy.</div>
+                    </div>
+                    <div class="dish-price">INR 299</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Rice & Pulao Section -->
+        <section class="menu-section">
+            <h3 class="text-3xl font-semibold text-amber-800 mb-6" Style="text-align : center;">Rice & Pulao</h3>
+            <p class="text-md text-amber-700 mb-6 italic" Style="text-align : center;">Perfectly cooked grains to complement your meal.</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-4">
+                <div class="dish-item">
+                    <div>
+                        <div class="dish-name">Steamed Basmati Rice</div>
+                        <div class="dish-description">Light and fluffy long-grain rice.</div>
+                    </div>
+                    <div class="dish-price">INR 169</div>
+                </div>
+                <div class="dish-item">
+                    <div>
+                        <div class="dish-name">Aromatic Jeera Rice</div>
+                        <div class="dish-description">Basmati rice tempered with cumin seeds.</div>
+                    </div>
+                    <div class="dish-price">INR 189</div>
+                </div>
+                <div class="dish-item">
+                    <div>
+                        <div class="dish-name">Matar Pulao</div>
+                        <div class="dish-description">Fragrant rice cooked with fresh green peas.</div>
+                    </div>
+                    <div class="dish-price">INR 189</div>
+                </div>
+                <div class="dish-item">
+                    <div>
+                        <div class="dish-name">Royal Hyderabadi Dum Biryani</div>
+                        <div class="dish-description">Fragrant basmati rice cooked with aromatic spices and vegetables.</div>
+                    </div>
+                    <div class="dish-price">INR 349</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sides & Accompaniments Section -->
+        <section class="menu-section">
+            <h3 class="text-3xl font-semibold text-amber-800 mb-6" Style="text-align : center;">Sides & Accompaniments</h3>
+            <p class="text-md text-amber-700 mb-6 italic" Style="text-align : center;">The perfect additions to complete your meal.</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-4">
+                <div class="dish-item">
+                    <div>
+                        <div class="dish-name">Cool Plain Curd</div>
+                        <div class="dish-description">Simple, refreshing plain yogurt.</div>
+                    </div>
+                    <div class="dish-price">INR 99</div>
+                </div>
+                <div class="dish-item">
+                    <div>
+                        <div class="dish-name">Refreshing Raita (Boondi/Mix Veg/Mix Fruit/Pineapple)</div>
+                        <div class="dish-description">Yogurt mixed with ingredients of your choice.</div>
+                    </div>
+                    <div class="dish-price">INR 149 / 169</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Breads from the Tandoor Section -->
+        <section class="menu-section">
+            <h3 class="text-3xl font-semibold text-amber-800 mb-6" Style="text-align : center;">Breads from the Tandoor</h3>
+            <p class="text-md text-amber-700 mb-6 italic" Style="text-align : center;">Freshly baked, hot from our clay oven.</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-4">
+                <div class="dish-item">
+                    <div>
+                        <div class="dish-name">Tandoori Roti (Plain/Butter)</div>
+                        <div class="dish-description">Whole wheat flatbread, baked in the tandoor.</div>
+                    </div>
+                    <div class="dish-price">INR 39 / 49</div>
+                </div>
+                <div class="dish-item">
+                    <div>
+                        <div class="dish-name">Fluffy Naan (Plain/Butter/Garlic)</div>
+                        <div class="dish-description">Soft, leavened bread, a perfect accompaniment.</div>
+                    </div>
+                    <div class="dish-price">INR 49 / 59 / 69</div>
+                </div>
+                <div class="dish-item">
+                    <div>
+                        <div class="dish-name">Missi Roti</div>
+                        <div class="dish-description">A flavorful flatbread made with gram flour and spices.</div>
+                    </div>
+                    <div class="dish-price">INR 69</div>
+                </div>
+                <div class="dish-item">
+                    <div>
+                        <div class="dish-name">Lachcha Paratha</div>
+                        <div class="dish-description">Flaky, layered whole wheat bread.</div>
+                    </div>
+                    <div class="dish-price">INR 79</div>
+                </div>
+                <div class="dish-item">
+                    <div>
+                        <div class="dish-name">Mirchi Paratha</div>
+                        <div class="dish-description">Unleavened bread spiced with green chilies.</div>
+                    </div>
+                    <div class="dish-price">INR 69</div>
+                </div>
+                <div class="dish-item">
+                    <div>
+                        <div class="dish-name">Malabar Paratha</div>
+                        <div class="dish-description">A soft, flaky, layered flatbread from South India.</div>
+                    </div>
+                    <div class="dish-price">INR 79</div>
+                </div>
+                <div class="dish-item">
+                    <div>
+                        <div class="dish-name">Chur Chur Naan</div>
+                        <div class="dish-description">Crumbled naan, rich and buttery - Our Speciality.</div>
+                    </div>
+                    <div class="dish-price">INR 99</div>
+                </div>
+                <div class="dish-item">
+                    <div>
+                        <div class="dish-name">Stuffed Kulcha (Onion/Aloo/Mix)</div>
+                        <div class="dish-description">Soft, leavened bread stuffed with your choice of filling.</div>
+                    </div>
+                    <div class="dish-price">INR 99</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Papad Perfection Section -->
+        <section class="menu-section">
+            <h3 class="text-3xl font-semibold text-amber-800 mb-6" Style="text-align : center;">Papad Perfection</h3>
+            <p class="text-md text-amber-700 mb-6 italic" Style="text-align : center;">Crispy accompaniments for every meal.</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-4">
+                <div class="dish-item">
+                    <div>
+                        <div class="dish-name">Crispy Papad (Roasted/Fry)</div>
+                        <div class="dish-description">Thin, crisp lentil wafers.</div>
+                    </div>
+                    <div class="dish-price">INR 49</div>
+                </div>
+                <div class="dish-item">
+                    <div>
+                        <div class="dish-name">Masala Papad</div>
+                        <div class="dish-description">Papad topped with chopped onions, tomatoes, and spices.</div>
+                    </div>
+                    <div class="dish-price">INR 69</div>
+                </div>
+                <div class="dish-item">
+                    <div>
+                        <div class="dish-name">Papad Basket</div>
+                        <div class="dish-description">An assortment of crispy papads.</div>
+                    </div>
+                    <div class="dish-price">INR 159</div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Oriental Odyssey Section -->
+        <section class="menu-section">
+            <h3 class="text-3xl font-semibold text-amber-800 mb-6" Style="text-align : center;">Oriental Odyssey</h3>
+            <p class="text-md text-amber-700 mb-6 italic" Style="text-align : center;">Journey to the East with our Asian inspirations.</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-4">
+                <div class="dish-item">
+                    <div>
+                        <div class="dish-name">Honey Chilli Potato</div>
+                        <div class="dish-description">Crispy fried potatoes tossed in a sweet and spicy sauce.</div>
+                    </div>
+                    <div class="dish-price">INR 299</div>
+                </div>
+                <div class="dish-item">
+                    <div>
+                        <div class="dish-name">Honey Chilli Lotus Stem</div>
+                        <div class="dish-description">Crunchy lotus stem coated in a delectable honey-chilli glaze.</div>
+                    </div>
+                    <div class="dish-price">INR 329</div>
+                </div>
+                <div class="dish-item">
+                    <div>
+                        <div class="dish-name">Chilli Paneer</div>
+                        <div class="dish-description">Paneer cubes tossed in a spicy, flavorful sauce.</div>
+                    </div>
+                    <div class="dish-price">INR 369</div>
+                </div>
+                <div class="dish-item">
+                    <div>
+                        <div class="dish-name">Sizzling Chilli Mushroom</div>
+                        <div class="dish-description">Mushrooms stir-fried in a fiery and aromatic sauce.</div>
+                    </div>
+                    <div class="dish-price">INR 349</div>
+                </div>
+                <div class="dish-item">
+                    <div>
+                        <div class="dish-name">Classic Manchurian</div>
+                        <div class="dish-description">Vegetable or paneer dumplings in a tangy, savory sauce.</div>
+                    </div>
+                    <div class="dish-price">INR 349</div>
+                </div>
+                <div class="dish-item">
+                    <div>
+                        <div class="dish-name">Crispy Chinese Bhel</div>
+                        <div class="dish-description">A unique fusion of crispy noodles and fresh vegetables.</div>
+                    </div>
+                    <div class="dish-price">INR 279</div>
+                </div>
+                <div class="dish-item">
+                    <div>
+                        <div class="dish-name">Sautéed Exotic Vegetables</div>
+                        <div class="dish-description">A colorful assortment of fresh, premium vegetables lightly stir-fried.</div>
+                    </div>
+                    <div class="dish-price">INR 369</div>
+                </div>
+                <div class="dish-item">
+                    <div>
+                        <div class="dish-name">Golden Crispy Corn</div>
+                        <div class="dish-description">Sweet corn kernels fried to a golden crisp.</div>
+                    </div>
+                    <div class="dish-price">INR 329</div>
+                </div>
+                <div class="dish-item">
+                    <div>
+                        <div class="dish-name">Vegetable Spring Rolls</div>
+                        <div class="dish-description">Crispy fried rolls filled with a delicious vegetable medley.</div>
+                    </div>
+                    <div class="dish-price">INR 309</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sizzling Hot Plates Section -->
+        <section class="menu-section">
+            <h3 class="text-3xl font-semibold text-amber-800 mb-6" Style="text-align : center;">Sizzling Hot Plates</h3>
+            <p class="text-md text-amber-700 mb-6 italic" Style="text-align : center;">Experience the drama and flavor of our sizzling specials.</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-4">
+                <div class="dish-item">
+                    <div>
+                        <div class="dish-name">Paneer & Veggie Sizzler</div>
+                        <div class="dish-description">A medley of paneer and vegetables served hot on a sizzler plate.</div>
+                    </div>
+                    <div class="dish-price">INR 399</div>
+                </div>
+                <div class="dish-item">
+                    <div>
+                        <div class="dish-name">Oriental Sizzler</div>
+                        <div class="dish-description">A Chinese-inspired sizzler with noodles, vegetables, and exotic sauces.</div>
+                    </div>
+                    <div class="dish-price">INR 399</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Noodle & Rice Bowls Section -->
+        <section class="menu-section">
+            <h3 class="text-3xl font-semibold text-amber-800 mb-6" Style="text-align : center;">Noodle & Rice Bowls</h3>
+            <p class="text-md text-amber-700 mb-6 italic" Style="text-align : center;">Satisfy your cravings with our comforting bowls.</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-4">
+                <div class="dish-item">
+                    <div>
+                        <div class="dish-name">Wok Tossed Hakka Noodles</div>
+                        <div class="dish-description">Classic stir-fried noodles with crisp vegetables.</div>
+                    </div>
+                    <div class="dish-price">INR 309</div>
+                </div>
+                <div class="dish-item">
+                    <div>
+                        <div class="dish-name">Garlic Infused Hakka Noodles</div>
+                        <div class="dish-description">Hakka noodles elevated with a fragrant garlic punch.</div>
+                    </div>
+                    <div class="dish-price">INR 319</div>
+                </div>
+                <div class="dish-item">
+                    <div>
+                        <div class="dish-name">Fried Rice</div>
+                        <div class="dish-description">Light and fluffy rice, stir-fried with vegetables.</div>
+                    </div>
+                    <div class="dish-price">INR 309</div>
+                </div>
+                <div class="dish-item">
+                    <div>
+                        <div class="dish-name">Korean Ramen Bowl</div>
+                        <div class="dish-description">A warming and flavorful noodle soup with an authentic twist.</div>
+                    </div>
+                    <div class="dish-price">INR 369</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Global Delights Section -->
+        <section class="menu-section">
+            <h3 class="text-3xl font-semibold text-amber-800 mb-6" Style="text-align : center;">Global Delights</h3>
+            <p class="text-md text-amber-700 mb-6 italic" Style="text-align : center;">A taste of the world, right at your table.</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-4">
+                <div class="dish-item">
+                    <div>
+                        <div class="dish-name">Lavash with Hummus</div>
+                        <div class="dish-description">Mediterranean flatbread served with a rich chickpea dip.</div>
+                    </div>
+                    <div class="dish-price">INR 299</div>
+                </div>
+                <div class="dish-item">
+                    <div>
+                        <div class="dish-name">Overload Nachos</div>
+                        <div class="dish-description">Crispy nachos piled high with cheese, salsa, and toppings.</div>
+                    </div>
+                    <div class="dish-price">INR 369</div>
+                </div>
+                <div class="dish-item">
+                    <div>
+                        <div class="dish-name">Steamed Momos <span class="text-sm text-gray-500">(Vegetable/Paneer/Mushroom)</span></div>
+                        <div class="dish-description">Delicate dumplings, steamed to perfection.</div>
+                    </div>
+                    <div class="dish-price">INR 299 / 329 / 329</div>
+                </div>
+                <div class="dish-item">
+                    <div>
+                        <div class="dish-name">Penne Pasta</div>
+                        <div class="dish-description">Pasta cooked to perfection in your preferred sauce-Alfredo, Arrabbiata or Pink Sauce.</div>
+                    </div>
+                    <div class="dish-price">INR 389</div>
+                </div>
+                <div class="dish-item">
+                    <div>
+                        <div class="dish-name">Baked Veggie Lasagna</div>
+                        <div class="dish-description">Layers of pasta, vegetables, and cheese, baked golden.</div>
+                    </div>
+                    <div class="dish-price">INR 439</div>
+                </div>
+                <div class="dish-item">
+                    <div>
+                        <div class="dish-name">Buttery Garlic Bread <span class="text-sm text-gray-500">(Plain/Cheesy)</span></div>
+                        <div class="dish-description">Toasted bread with garlic and herbs, or with melted cheese.</div>
+                    </div>
+                    <div class="dish-price">INR 99 / 129</div>
+                </div>
+                <div class="dish-item">
+                    <div>
+                        <div class="dish-name">Baked Vegetables</div>
+                        <div class="dish-description">A comforting casserole of mixed vegetables baked with cheese.</div>
+                    </div>
+                    <div class="dish-price">INR 399</div>
+                </div>
+                <div class="dish-item">
+                    <div>
+                        <div class="dish-name">Artisan Pizza <span class="text-sm text-gray-500">(Margherita/Veggie Delight)</span></div>
+                        <div class="dish-description">Hand-tossed pizza with classic toppings.</div>
+                    </div>
+                    <div class="dish-price">INR 389 / 429</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quick Bites & Snacks Section -->
+        <section class="menu-section">
+            <h3 class="text-3xl font-semibold text-amber-800 mb-6" Style="text-align : center;">Quick Bites & Snacks</h3>
+            <p class="text-md text-amber-700 mb-6 italic" Style="text-align : center;">Perfect for a light meal or a quick indulgence.</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-4">
+                <div class="dish-item">
+                    <div>
+                        <div class="dish-name">Deluxe Veg Cheese Burger</div>
+                        <div class="dish-description">A juicy vegetable patty with melted cheese in a soft bun.</div>
+                    </div>
+                    <div class="dish-price">INR 149</div>
+                </div>
+                <div class="dish-item">
+                    <div>
+                        <div class="dish-name">Creamy Spinach Corn Sandwich</div>
+                        <div class="dish-description">A comforting sandwich filled with a creamy spinach and corn mixture.</div>
+                    </div>
+                    <div class="dish-price">INR 149</div>
+                </div>
+                <div class="dish-item">
+                    <div>
+                        <div class="dish-name">Spicy Paneer Tikka Sandwich</div>
+                        <div class="dish-description">Grilled paneer tikka stuffed between slices of bread.</div>
+                    </div>
+                    <div class="dish-price">INR 209</div>
+                </div>
+                <div class="dish-item">
+                    <div>
+                        <div class="dish-name">Paneer Tikka Wrap</div>
+                        <div class="dish-description">Marinated paneer tikka rolled in a soft wrap.</div>
+                    </div>
+                    <div class="dish-price">INR 209</div>
+                </div>
+                <div class="dish-item">
+                    <div>
+                        <div class="dish-name">Tangy Jalapeno Vegetable Wrap</div>
+                        <div class="dish-description">A zesty wrap filled with fresh vegetables and spicy jalapenos.</div>
+                    </div>
+                    <div class="dish-price">INR 189</div>
+                </div>
+                <div class="dish-item">
+                    <div>
+                        <div class="dish-name">Mumbaiya Vada Paav</div>
+                        <div class="dish-description">The iconic potato fritter in a soft bun, a true street food classic.</div>
+                    </div>
+                    <div class="dish-price">INR 149</div>
+                </div>
+                <div class="dish-item">
+                    <div>
+                        <div class="dish-name">Samosa Chaat</div>
+                        <div class="dish-description">Crushed samosas topped with chutneys and yogurt.</div>
+                    </div>
+                    <div class="dish-price">INR 129</div>
+                </div>
+                <div class="dish-item">
+                    <div>
+                        <div class="dish-name">Palak Patta Chaat</div>
+                        <div class="dish-description">Crispy spinach leaves topped with sweet and tangy flavors - A house favourite.</div>
+                    </div>
+                    <div class="dish-price">INR 129</div>
+                </div>
+                <div class="dish-item">
+                    <div>
+                        <div class="dish-name">Crunchy Aloo Papdi Chaat</div>
+                        <div class="dish-description">Crispy papdi and potatoes topped with a medley of chutneys.</div>
+                    </div>
+                    <div class="dish-price">INR 129</div>
+                </div>
+                <div class="dish-item">
+                    <div>
+                        <div class="dish-name">Panipuri Shots</div>
+                        <div class="dish-description">A fun way to enjoy the classic street food.</div>
+                    </div>
+                    <div class="dish-price">INR 129</div>
+                </div>
+                <div class="dish-item">
+                    <div>
+                        <div class="dish-name">Bun Maska with Kulhad Chai</div>
+                        <div class="dish-description">Toasted buttered bun served with traditional clay pot tea.</div>
+                    </div>
+                    <div class="dish-price">INR 99</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gourmet Indulgences Section -->
+        <section class="menu-section">
+            <h3 class="text-3xl font-semibold text-amber-800 mb-6" Style="text-align : center;">Gourmet Indulgences</h3>
+            <p class="text-md text-amber-700 mb-6 italic" Style="text-align : center;">Unique creations for a memorable experience.</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-4">
+                <div class="dish-item">
+                    <div>
+                        <div class="dish-name">Cheese Fondue</div>
+                        <div class="dish-description">Melted cheese served with an array of dippers.</div>
+                    </div>
+                    <div class="dish-price">INR 299</div>
+                </div>
+                <div class="dish-item">
+                    <div>
+                        <div class="dish-name">Paav Bhaji Fondue</div>
+                        <div class="dish-description">A unique twist on the classic, served fondue style.</div>
+                    </div>
+                    <div class="dish-price">INR 269</div>
+                </div>
+                <div class="dish-item">
+                    <div>
+                        <div class="dish-name">Cheesy Chilli Toast</div>
+                        <div class="dish-description">Toasted bread topped with spicy cheese.</div>
+                    </div>
+                    <div class="dish-price">INR 229</div>
+                </div>
+                <div class="dish-item">
+                    <div>
+                        <div class="dish-name">Golden Fries (Salted/Peri Peri/Cheese)</span></div>
+                        <div class="dish-description">Crispy potato fries with your favorite seasoning.</div>
+                    </div>
+                    <div class="dish-price">INR 109 / 119 / 149</div>
+                </div>
+                <div class="dish-item">
+                    <div>
+                        <div class="dish-name">Vegetable Nuggets</div>
+                        <div class="dish-description">Bite-sized vegetable delights, perfect for snacking.</div>
+                    </div>
+                    <div class="dish-price">INR 149</div>
+                </div>
+                <div class="dish-item">
+                    <div>
+                        <div class="dish-name">Yummy Maggi (Plain/Vegetable/Cheese)</span></div>
+                        <div class="dish-description">India's favorite instant noodles, customized for you.</div>
+                    </div>
+                    <div class="dish-price">INR 99 / 109 / 129</div>
+                </div>
+                <div class="dish-item">
+                    <div>
+                        <div class="dish-name">Cheese Cigar Rolls</div>
+                        <div class="dish-description">Flavorful cheese rolled in pastry and fried to a crisp.</div>
+                    </div>
+                    <div class="dish-price">INR 209</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Ambrosia's Combos Section -->
+        <section class="menu-section">
+            <h3 class="text-3xl font-semibold text-amber-800 mb-6" Style="text-align : center;">Ambrosia's Combos</h3>
+            <p class="text-md text-amber-700 mb-6 italic" Style="text-align : center;">Perfect pairings for a complete meal.</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-4">
+                <div class="dish-item">
+                    <div>
+                        <div class="dish-name">Dal Dum Pukht with Chur Chur Naan</div>
+                        <div class="dish-description">Our signature dal paired with crispy, crumbled naan.</div>
+                    </div>
+                    <div class="dish-price">INR 399</div>
+                </div>
+                <div class="dish-item">
+                    <div>
+                        <div class="dish-name">Punjabi Delights</span></div>
+                        <div class="dish-description">Amritsari Kulcha with Chana Masala - A hearty North Indian classic.</div>
+                    </div>
+                    <div class="dish-price">INR 349</div>
+                </div>
+                <div class="dish-item">
+                    <div>
+                        <div class="dish-name">Chinese Fusion</div>
+                        <div class="dish-description">Your favorite Chinese mains and sides - Hakka Noodles/Fried Rice with Chilli Paneer/Manchurian).</div>
+                    </div>
+                    <div class="dish-price">INR 449</div>
+                </div>
+                <div class="dish-item">
+                    <div>
+                        <div class="dish-name">Paneer Bliss</div>
+                        <div class="dish-description">Paneer Butter Masala + Naan/Tandoori Roti - A timeless Indian comfort meal.</div>
+                    </div>
+                    <div class="dish-price">INR 399</div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+        <!-- Heavenly Desserts Section -->
+        <section class="menu-section">
+            <h3 class="text-3xl font-semibold text-amber-800 mb-6" Style="text-align : center;">Heavenly Desserts</h3>
+            <p class="text-md text-amber-700 mb-6 italic" Style="text-align : center;">A sweet ending to your culinary journey.</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-4">
+                <div class="dish-item">
+                    <div>
+                        <div class="dish-name">Ice Cream Scoop </div>
+                        <div class="dish-description">Classic ice cream flavors to cool your palate - Vanilla/Chocolate/Butter Scotch.</div>
+                    </div>
+                    <div class="dish-price">INR 109</div>
+                </div>
+                <div class="dish-item">
+                    <div>
+                        <div class="dish-name">Kulfi Delights</div>
+                        <div class="dish-description">Authentic Indian frozen dessert - Malai/Paan/Kesar Pista.</div>
+                    </div>
+                    <div class="dish-price">INR 109</div>
+                </div>
+                <div class="dish-item">
+                    <div>
+                        <div class="dish-name">Gulab Jamun</div>
+                        <div class="dish-description">Soft, deep-fried milk solids soaked in a fragrant sugar syrup.</div>
+                    </div>
+                    <div class="dish-price">INR 129</div>
+                </div>
+                <div class="dish-item">
+                    <div>
+                        <div class="dish-name">Sizzling Brownie with Ice Cream</div>
+                        <div class="dish-description">A warm brownie smeared with Chocolate served with a scoop of vanilla ice cream.</div>
+                    </div>
+                    <div class="dish-price">INR 249</div>
+                </div>
+                <div class="dish-item">
+                    <div>
+                        <div class="dish-name">Fluffy Pancakes</div>
+                        <div class="dish-description">Golden pancakes with your favorite topping - Nutella or Honey.</div>
+                    </div>
+                    <div class="dish-price">INR 229</div>
+                </div>
+            </div>
+        </section>
+    <!-- Terms and Conditions Page -->
+    <section class="menu-page bg-amber-50">
+        <div class="p-8 rounded-lg shadow-xl bg-white max-w-2xl w-full text-left">
+            <h2 class="text-4xl font-bold text-amber-800 mb-6 border-b-2 border-amber-300 pb-4 text-center">Important Information</h2>
+            <ul class="list-disc list-inside text-lg text-gray-700 space-y-3">
+                <li><strong>Goods and Services Tax (GST) as applicable</strong> will be added to your bill.</li>
+                <li><strong>Meal Preparation Time:</strong> We strive to serve fresh and delicious food, which may take some time. Please allow for a reasonable waiting period, especially during peak hours.</li>
+                <li><strong>Allergy Information:</strong> Please inform your server about any allergies or dietary restrictions you may have. While we take utmost care, we cannot guarantee completely allergen-free dishes.</li>
+                <li><strong>Feedback:</strong> Your satisfaction is our priority. Please feel free to share your feedback with our staff.</li>
+                <li><strong>Management Rights:</strong> The management reserves the right to refuse service or amend menu items and prices without prior notice.</li>
+            </ul>
+            <p class="text-xl md:text-2xl text-gray-800 mt-10 text-center italic">
+                Thank you for choosing Ambrosia. 
+            </p>
+        </div>
+    </section>
+
+    <!-- Back Cover Page -->
+    <section class="menu-page bg-amber-50">
+        <div class="p-8 rounded-lg shadow-xl bg-white max-w-lg w-full">
+            <h2 class="text-4xl font-bold text-amber-800 mb-4 tracking-wide">Ambrosia</h2>
+            <p class="text-lg text-gray-700 mb-2">Unit of Hotel Osian Grand</p>
+            <p class="text-lg text-gray-700 mb-2">127/747, W-1, Saket Nagar,</p>
+            <p class="text-lg text-gray-700 mb-4">Kanpur</p>
+            <a href="http://www.osiangrand.com" class="text-xl text-blue-600 hover:underline">www.osiangrand.com</a>
+        </div>
+    </section>
+
+</body>
+</html>
